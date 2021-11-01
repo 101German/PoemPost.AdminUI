@@ -141,6 +141,37 @@
         "AllowedCorsOrigins": [
           "https://localhost:44302"
         ]
+      },
+      {
+        "ClientId": "PoemPostClient",
+        "ClientName": "PoemPostClient",
+        "AllowedGrantTypes": [
+          "implicit"
+        ],
+        "RequireClientSecret": true,
+        "RequirePkce": false,
+        "ClientSecrets": [
+          {
+            "Value": "ba44fc35-a4bc-4dda-9eb3-f29d56a52aa7"
+          }
+        ],
+        "RedirectUris": [
+          "http://localhost:4200"
+        ],
+        "FrontChannelLogoutUri": "http://localhost:4200/home",
+        "PostLogoutRedirectUris": [
+          "http://localhost:4200"
+        ],
+        "AllowedScopes": [
+          "PoemPost_api",
+          "openid",
+          "email",
+          "profile",
+          "roles"
+        ],
+        "AllowedCorsOrigins": [
+          "https://localhost:44302"
+        ]
       }
     ]
   }
