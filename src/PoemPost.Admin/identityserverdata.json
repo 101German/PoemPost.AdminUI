@@ -90,6 +90,37 @@
     ],
     "Clients": [
       {
+        "ClientId": "PoemPost_admin",
+        "ClientName": "PoemPost_admin",
+        "ClientUri": "https://localhost:44303",
+        "AllowedGrantTypes": [
+          "authorization_code"
+        ],
+        "RequirePkce": true,
+        "ClientSecrets": [
+          {
+            "Value": "MyClientSecret"
+          }
+        ],
+        "RedirectUris": [
+          "https://localhost:44303/signin-oidc"
+        ],
+        "FrontChannelLogoutUri": "https://localhost:44303/signout-oidc",
+        "PostLogoutRedirectUris": [
+          "https://localhost:44303/signout-callback-oidc"
+        ],
+        "AllowedCorsOrigins": [
+          "https://localhost:44303"
+        ],
+        "AllowedScopes": [
+          "openid",
+          "email",
+          "profile",
+          "roles",
+          "PoemPost_api"
+        ]
+      },
+      {
         "ClientId": "PoemPost_api_swaggerui",
         "ClientName": "PoemPost_api_swaggerui",
         "AllowedGrantTypes": [
