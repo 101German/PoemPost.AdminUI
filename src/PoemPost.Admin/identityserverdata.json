@@ -158,7 +158,7 @@
         "RedirectUris": [
           "http://localhost:4200"
         ],
-        "FrontChannelLogoutUri": "http://localhost:4200/home",
+        "FrontChannelLogoutUri": "http://localhost:4200/Post",
         "PostLogoutRedirectUris": [
           "http://localhost:4200"
         ],
