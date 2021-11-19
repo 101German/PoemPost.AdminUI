@@ -72,6 +72,7 @@ namespace PoemPost.STS.Identity
             }
 
             app.UsePathBase(Configuration.GetValue<string>("BasePath"));
+            app.UseCors();
 
             // Add custom security headers
             app.UseSecurityHeaders(Configuration);

@@ -145,6 +145,7 @@
       {
         "ClientId": "PoemPostClient",
         "ClientName": "PoemPostClient",
+        "ClientUri": "https://localhost:4200",
         "AllowedGrantTypes": [
           "implicit"
         ],
@@ -170,8 +171,9 @@
           "roles"
         ],
         "AllowedCorsOrigins": [
-          "https://localhost:44302"
-        ]
+          "http://localhost:4200"
+        ],
+        "AllowAccessTokensViaBrowser": true
       }
     ]
   }
